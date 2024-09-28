@@ -1,18 +1,10 @@
-# HR Assistant Using Titan Text Premier with Agents and Knowledge Bases for Amazon Bedrock
----
-## Authors:
-Anupam Dewan @dewanup, Jie Lie @liaji, Han Liu @haliuz
-
-## Reviewer:
-Maira Ladeira Tanke @mttanke
+# HR Assistant Using Agents and Knowledge Bases for Amazon Bedrock
 
 
 ## Content
 - [Overview](#overview)
 - [Agents and Knowledge Bases Architecture](#agents-and-knowledge-bases-architecture)
-- [Deployment Guide](#deployment-guide)
-- [Test Conversation](#test-conversation)
-- [Clean Up](#clean-up)
+
 
 ## Overview
 
@@ -21,10 +13,6 @@ With a maximum context length of 32K tokens, it has been speciﬁcally optimized
 
 This sample solution  uses Titan Text Premier with, Agents, and Knowledge Bases, all tied together with Amazon Bedrock. The solution showcases an HR assistant build on existing enterprise resources, with the an employee asking questions around HR related tasks like time off, leave policies, employee pay-stubs. The solution also aims at automating leave requests and question answering on time off policies and employee payment related details. Your Bedrock-powered HR Assistant can assist employees from asking policy related questions, to submitting a time off and sending communications through email and slack to their team-mates and managers.
 
-
-### Demo Recording
-
-[<img src="imgs/00_youtube_thumbnail.png" width="100%">](https://youtu.be/T4kSNEeUxc4 "Demo: Put Amazon Titan Text Premier to Work for Enterprise Automation  - YouTube")
 
 ## Agents and Knowledge Bases for Amazon Bedrock
 
@@ -40,10 +28,6 @@ Agents and Knowledge Bases for Amazon Bedrock work together to provide the follo
 
 ### Agents and Knowledge Bases Architecture
 
-<p align="center">
-  <img src="imgs/01_agent-overview.png">
-  <em>Diagram 1: Agents and Knowledge Bases for Amazon Bedrock Architecture Overview</em>
-</p>
 
 The workflow consists of the following steps:
 
@@ -80,24 +64,3 @@ The workflow consists of the following steps:
 > In this sample application, The agent processes the employee's query, reasons on the query, breaks it down into a series of sub-tasks, determines the proper sequence of steps, and finally executes the appropriate actions and knowledge searches on the fly. 
       
 6. During **post-processing**, once all _orchestration_ iterations are complete, the agent curates a final response. Post-processing is disabled by default.
-
-## Deployment Guide
-see [Deployment Guide](documentation/deployment-guide.md)
-
-## Test Conversation
-see [Test Conversation](documentation/deployment-guide.md#test-conversation)
-
-## Clean Up
-see [Clean Up](documentation/clean-up.md)
-
-## Refrences:
-
-Data Sources:
-
-(1) The Aglaia_Benifits_Policy.pdf is a Fictitious Company HR policy
-(2) Paystubs for January and Feburary is also synthetically created fake paystubs
-
----
-
-Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
-SPDX-License-Identifier: MIT-0
