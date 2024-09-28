@@ -6,7 +6,7 @@
  from aws_lambda_powertools import Logger
  logger = Logger()
  def send_slack_message(message: str) -> bool:
-     url = {https://hooks.slack.com/services/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}
+     url = {https://hooks.slack.com/services/T0XXXXXX69H/BXXXXPE6BL3/6rnBdbG8Qxub4G9itZLt0fe3}
      req_json = {"msg": message}
      try:
          requests.post(url, json=req_json)
