@@ -78,6 +78,7 @@ Resources:
               - athena:StartQueryExecution
               - athena:GetQueryExecution
               - athena:GetQueryResults
+              - lakeformation:GetDataAccess
               - bedrock:InvokeModel
               - sns:Publish
               - s3:GetObject
